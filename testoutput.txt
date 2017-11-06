@@ -1,0 +1,51 @@
+lauri@hubbu:~$ java -version
+openjdk version "1.8.0_131"
+OpenJDK Runtime Environment (build 1.8.0_131-8u131-b11-1~bpo8+1-b11)
+OpenJDK 64-Bit Server VM (build 25.131-b11, mixed mode)
+
+lauri@hubbu:~$ java -jar jarvscp-1.0-SNAPSHOT-fat.jar
+JarVsCp.class.resource = jar:file:/mnt/sdb1/home/lauri/dev/spectx/jarvscp-1.0-SNAPSHOT-fat.jar!/io/github/unapplicable/JarVsCp.class
+Running from jar #1: true
+sun.java.command = jarvscp-1.0-SNAPSHOT-fat.jar
+sun.java.command[0] = jarvscp-1.0-SNAPSHOT-fat.jar
+Running with -jar #2: true
+
+lauri@hubbu:~$ java -classpath jarvscp-1.0-SNAPSHOT-fat.jar io.github.unapplicable.JarVsCp
+JarVsCp.class.resource = jar:file:/mnt/sdb1/home/lauri/dev/spectx/jarvscp-1.0-SNAPSHOT-fat.jar!/io/github/unapplicable/JarVsCp.class
+Running from jar #1: true
+sun.java.command = io.github.unapplicable.JarVsCp
+sun.java.command[0] = io.github.unapplicable.JarVsCp
+Running with -jar #2: false
+
+lauri@hubbu:~$ java -classpath classes io.github.unapplicable.JarVsCp
+JarVsCp.class.resource = file:/mnt/sdb1/home/lauri/dev/spectx/classes/io/github/unapplicable/JarVsCp.class
+Running from jar #1: false
+sun.java.command = io.github.unapplicable.JarVsCp
+sun.java.command[0] = io.github.unapplicable.JarVsCp
+Running with -jar #2: false
+
+>java -version
+java version "1.8.0_144"
+Java(TM) SE Runtime Environment (build 1.8.0_144-b01)
+Java HotSpot(TM) 64-Bit Server VM (build 25.144-b01, mixed mode)
+
+>java -jar jarvscp-1.0-SNAPSHOT-fat.jar
+JarVsCp.class.resource = jar:file:/C:/dev/spectx/jarvscp/target/jarvscp-1.0-SNAPSHOT-fat.jar!/io/github/unapplicable/JarVsCp.class
+Running from jar #1: true
+sun.java.command = jarvscp-1.0-SNAPSHOT-fat.jar
+sun.java.command[0] = jarvscp-1.0-SNAPSHOT-fat.jar
+Running with -jar #2: true
+
+>java -classpath jarvscp-1.0-SNAPSHOT-fat.jar io.github.unapplicable.JarVsCp
+JarVsCp.class.resource = jar:file:/C:/dev/spectx/jarvscp/target/jarvscp-1.0-SNAPSHOT-fat.jar!/io/github/unapplicable/JarVsCp.class
+Running from jar #1: true
+sun.java.command = io.github.unapplicable.JarVsCp
+sun.java.command[0] = io.github.unapplicable.JarVsCp
+Running with -jar #2: false
+
+>java -classpath classes io.github.unapplicable.JarVsCp
+JarVsCp.class.resource = file:/C:/dev/spectx/jarvscp/target/classes/io/github/unapplicable/JarVsCp.class
+Running from jar #1: false
+sun.java.command = io.github.unapplicable.JarVsCp
+sun.java.command[0] = io.github.unapplicable.JarVsCp
+Running with -jar #2: false
